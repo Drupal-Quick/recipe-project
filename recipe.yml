@@ -1,0 +1,15 @@
+name: 'Project'
+description: >
+  Adds a Project content type — a basic page plus a Link field and a Thumbnail
+  image — and a "projects" view that lists them as a thumbnail grid. Demonstrates
+  a second recipe, from a second package, contributing its own content type,
+  view, and theme assets.
+type: Content
+
+install:
+  - link
+  - image
+
+# All configuration in this recipe's config/ directory (the content type, its
+# fields, the form/view displays, and the projects view) is created
+# automatically when the recipe is applied, in dependency order.

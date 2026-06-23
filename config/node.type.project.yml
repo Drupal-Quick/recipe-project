@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Project
+type: project
+description: 'A portfolio project — like a basic page, plus a link and a thumbnail.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

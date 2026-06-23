@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * "Projects" view — a thumbnail grid (3 across). Minimal, platform-agnostic
+ * markup; `projects` (title/url/image) and `structured_data` (an ItemList →
+ * CreativeWork JSON-LD block) are built in project.theme.inc.
+ *
+ * @ingroup themeable
+ */
+#}
+<h1 class="sr-only">{{ title|default('Projects'|t) }}</h1>
+
+{% if projects %}
+  <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3">
+    {% for p in projects %}
+      <li>
+        <a href="{{ p.url }}" class="group block">
+          {% if p.image %}
+            <img src="{{ p.image }}" alt="" loading="lazy" width="400" height="400"
+                 class="aspect-square w-full rounded object-cover" />
+          {% else %}
+            <span class="block aspect-square w-full rounded bg-rule" aria-hidden="true"></span>
+          {% endif %}
+          <span class="mt-2 block text-sm text-muted transition-colors group-hover:text-ink">{{ p.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{{ pager }}
+{{ structured_data }}
