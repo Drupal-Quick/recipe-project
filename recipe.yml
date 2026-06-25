@@ -9,6 +9,10 @@ type: Content
 install:
   - link
   - image
+  # dq_project ships in this recipe's module/ directory; dq:scaffold assembles
+  # it under the umbrella module before the recipe is applied. It carries the
+  # projects-view preprocess + Schema.org JSON-LD as native OOP #[Hook] methods.
+  - dq_project
 
 # All configuration in this recipe's config/ directory (the content type, its
 # fields, the form/view displays, and the projects view) is created
