@@ -10,7 +10,7 @@ use Drupal\Core\Render\Markup;
 /**
  * Project recipe — theme hooks and Schema.org JSON-LD.
  *
- * Native object-oriented hooks (Drupal 11.3+). This module is a separate
+ * Native object-oriented hooks (Drupal 11.1.8+). This module is a separate
  * extension, so its #[Hook] preprocess methods stack with the generated theme's
  * own preprocess and with other recipe modules (e.g. dq_blog also implements
  * preprocess_views_view) — each guards by view id, no dispatcher needed.

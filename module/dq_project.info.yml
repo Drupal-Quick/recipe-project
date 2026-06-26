@@ -1,7 +1,7 @@
 name: 'DQ Project'
 type: module
 description: 'Project recipe behaviour: projects view preprocess and module-free Schema.org ItemList JSON-LD.'
-core_version_requirement: ^11.3
+core_version_requirement: ^11.1.8
 package: 'DQ'
 dependencies:
   - drupal:node
