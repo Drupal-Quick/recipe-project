@@ -2,5 +2,13 @@
     "name": "drupal-quick/recipe-project",
     "description": "drupal-quick project recipe — a Project content type (page + link + thumbnail) and a projects grid view with module-free Schema.org markup.",
     "type": "drupal-recipe",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-or-later",
+    "extra": {
+        "dq": {
+            "recipe": {
+                "key": "project",
+                "label": "Project — content type (page + link + thumbnail) and a projects grid view"
+            }
+        }
+    }
 }
